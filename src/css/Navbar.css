@@ -1,0 +1,91 @@
+/* Navbar.css */
+
+.navbar{
+    height:80px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 80px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* LOGO SECTION */
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-box img{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:50%;
+    border:2px solid #e63946;
+}
+
+.logo{
+    color:#e63946;
+    font-size:36px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+/* NAV LINKS */
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links li{
+    cursor:pointer;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links li:hover{
+    color:#e63946;
+}
+
+/* BUTTON */
+
+.navbar button{
+    background:#e63946;
+    color:white;
+    border:none;
+    padding:10px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar button:hover{
+    background:#c1121f;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .logo-box img{
+        width:45px;
+        height:45px;
+    }
+}
